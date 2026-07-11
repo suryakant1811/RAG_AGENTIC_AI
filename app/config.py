@@ -13,4 +13,11 @@ class Settings:
     GROQ_FALLBACK_API_KEY = os.getenv("GROQ_FALLBACK_API_KEY")
     GROQ_MODEL = "llama-3.3-70b-versatile"
 
+    LOGFIRE_TOKEN = os.getenv("LOGFIRE_TOKEN")
+    LOGFIRE_SERVICE_NAME = os.getenv(
+        "LOGFIRE_SERVICE_NAME",
+        "enterprise-ingestion-service",
+    )
+    LOGFIRE_ENVIRONMENT = os.getenv("LOGFIRE_ENVIRONMENT", "development")
+
 settings = Settings()

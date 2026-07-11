@@ -1,4 +1,4 @@
-mport logfire
+import logfire
 from pypdf import PdfReader
 
 
